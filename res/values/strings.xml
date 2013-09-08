@@ -4,5 +4,8 @@
     <string name="app_name">FaultReportApp</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="app_start">I want to..</string>
+    <string name="Incident_button">Report a Incident Going On</string>
+    <string name="fault_button">Report a Fault </string>
 
 </resources>
