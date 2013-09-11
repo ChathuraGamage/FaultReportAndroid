@@ -10,7 +10,8 @@
     <string name="incident_page">Incident page</string>
     <string name="fault_page">Fault page</string>
     <string name="exit">Are you sure you want to exit?</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="no">No</string>
+    <string name="discart_msg">Are you sure you want to go back ? any data entered will be lost!</string>
 
 </resources>

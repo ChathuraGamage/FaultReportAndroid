@@ -45,6 +45,7 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int app_start=0x7f050003;
+        public static final int discart_msg=0x7f05000b;
         public static final int exit=0x7f050008;
         public static final int fault_button=0x7f050005;
         public static final int fault_page=0x7f050007;
