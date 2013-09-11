@@ -17,5 +17,6 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <style name="pop_up" parent="android:Theme.Dialog"></style>
+    <style name="pages" parent="android:Theme.Black"></style>
 
 </resources>

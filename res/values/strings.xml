@@ -8,5 +8,9 @@
     <string name="Incident_button">Incident Going On</string>
     <string name="fault_button">Fault within University</string>
     <string name="incident_page">Incident page</string>
+    <string name="fault_page">Fault page</string>
+    <string name="exit">Are you sure you want to exit?</string>
+    <string name="ok">Ok</string>
+    <string name="no">No</string>
 
 </resources>
