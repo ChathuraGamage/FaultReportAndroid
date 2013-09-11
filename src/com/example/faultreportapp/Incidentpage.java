@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
 
 public class Incidentpage extends Activity {
 	
@@ -17,6 +18,7 @@ public class Incidentpage extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.incidentpage);			
 	}
@@ -24,7 +26,7 @@ public class Incidentpage extends Activity {
 	@Override
 	public void onBackPressed() {
 	    new AlertDialog.Builder(this)
-		    .setIcon(android.R.drawable.ic_dialog_alert)
+		    .setIcon(android.R.drawable.ic_dialog_info)
 	        .setTitle("Going back!")
 	        .setMessage("Are you sure you want to go back? Current input data will be lost.")
 	        .setPositiveButton("Yes", new DialogInterface.OnClickListener()

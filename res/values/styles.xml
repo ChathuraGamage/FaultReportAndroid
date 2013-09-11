@@ -18,5 +18,6 @@
     </style>
     <style name="pop_up" parent="android:Theme.Dialog"></style>
     <style name="pages" parent="android:Theme.Black"></style>
+    <style name="transparent" parent="android:Theme.Translucent"></style>
 
 </resources>

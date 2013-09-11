@@ -4,14 +4,22 @@
     <string name="app_name">FaultReportApp</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="app_start">I want to report a ,</string>
+    <string name="app_start">Choose your option below</string>
     <string name="Incident_button">Incident Going On</string>
     <string name="fault_button">Fault within University</string>
-    <string name="incident_page">Incident page</string>
-    <string name="fault_page">Fault page</string>
+    <string name="fault_page">Report a Fault</string>
     <string name="exit">Are you sure you want to exit?</string>
     <string name="ok">OK</string>
     <string name="no">No</string>
     <string name="discart_msg">Are you sure you want to go back ? any data entered will be lost!</string>
+    <string name="fill_form">Fill the form below and hit send !</string>
+    <string name="required">The fields marked with * should be non empty. </string>
+    <string name="your_name">Your name</string>
+    <string name="place">Place</string>
+    <string name="description">Description</string>
+    <string name="incident_page">Report a Incident</string>
+    <string name="send">Send</string>
+    <string name="welcome">Fault-Incident report system</string>
+    <string name="not_yet">not setted yet</string>
 
 </resources>
