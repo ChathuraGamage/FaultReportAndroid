@@ -4,28 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/yesB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="34dp"
-        android:minWidth="100dp"
-        android:text="@string/ok" />
-
-    <Button
-        android:id="@+id/noB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="46dp"
-        android:layout_toRightOf="@+id/button1"
-        android:minWidth="100dp"
-        android:text="@string/no" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -35,5 +13,27 @@
         android:layout_marginTop="26dp"
         android:text="@string/exit"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/yesB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="26dp"
+        android:minWidth="100dp"
+        android:text="@string/ok" />
+
+    <Button
+        android:id="@+id/noB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yesB"
+        android:layout_alignBottom="@+id/yesB"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginRight="22dp"
+        android:minWidth="100dp"
+        android:text="@string/no" />
 
 </RelativeLayout>

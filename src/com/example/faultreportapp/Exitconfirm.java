@@ -3,6 +3,7 @@ package com.example.faultreportapp;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -20,14 +21,15 @@ public class Exitconfirm extends Activity {
 		Button yes =(Button)findViewById(R.id.yesB);
 		Button no =(Button)findViewById(R.id.noB);
 		
-				
-		
 		yes.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View arg0) {
-				finish();
-				System.exit(0);
+				Intent intent = new Intent(getApplicationContext(), Start.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				intent.putExtra("EXIT", true);
+				startActivity(intent);
+				
+				
 				
 			}
 		});
@@ -36,8 +38,6 @@ public class Exitconfirm extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				finish();
-				System.exit(0);
-				
 			}
 		});
 		

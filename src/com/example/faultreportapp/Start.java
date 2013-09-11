@@ -23,9 +23,9 @@ public class Start extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				Intent inte =new Intent(Start.this, Faultpage.class);
+				Intent intent =new Intent(Start.this, Faultpage.class);
 				
-				startActivity(inte);
+				startActivity(intent);
 				
 				
 			}
@@ -36,14 +36,28 @@ public class Start extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				Intent inte =new Intent(Start.this, Incidentpage.class);
+				Intent intent =new Intent(Start.this, Incidentpage.class);
 				
-				startActivity(inte);
-				
-				
+				startActivity(intent);
+							
 			}
 		});
+		
+		
+		if (getIntent().getBooleanExtra("EXIT", false)) {
+	         finish();
+	    }
+		
 	}
+	
+	
+	@Override
+	public void onBackPressed() {
+		Intent intent =new Intent(Start.this, Exitconfirm.class);
+		startActivity(intent);
+	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
