@@ -20,39 +20,38 @@ public class Start extends Activity {
 		Button fault=(Button)findViewById(R.id.Button01);
 		Button incident=(Button)findViewById(R.id.button1);
 		
+		
+		/*
+		 * On choosing report Fault forward to the fault page
+		 */
 		fault.setOnClickListener(new OnClickListener() {
-			
 			@Override
-			public void onClick(View v) {
-				
-				Intent intent =new Intent(Start.this, Faultpage.class);
-				
-				startActivity(intent);
-				
-				
+			public void onClick(View v) {	
+				Intent intent =new Intent(Start.this, Faultpage.class);	
+				startActivity(intent);	
 			}
 		});
 		
+		/*
+		 * On choosing report Fault forward to the fault page
+		 */
 		incident.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
-				
 				Intent intent =new Intent(Start.this, Incidentpage.class);
-				
-				startActivity(intent);
-							
+				startActivity(intent);			
 			}
 		});
-		
-		
+			
 		if (getIntent().getBooleanExtra("EXIT", false)) {
 	         finish();
-	    }
-		
+	    }		
 	}
-	
-	
+		
+	/*
+	 * Prevent user from accidently exiting the app.
+	 * 
+	 */
 	@Override
 	public void onBackPressed() {
 		Intent intent =new Intent(Start.this, Exitconfirm.class);

@@ -14,12 +14,14 @@ public class Exitconfirm extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		//avoiding appname from displaying
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.exitconfirm);
 		
 		Button yes =(Button)findViewById(R.id.yesB);
 		Button no =(Button)findViewById(R.id.noB);
 		
+		//On clicking yes exit the app
 		yes.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -30,6 +32,8 @@ public class Exitconfirm extends Activity {
 				
 			}
 		});
+		
+		//On clicking no stays on in the app
 		no.setOnClickListener(new OnClickListener() {
 			
 			@Override

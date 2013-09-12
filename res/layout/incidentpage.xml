@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/androidpic"
+    android:background="@drawable/mainmenu"
     android:orientation="vertical" >
 
     <TextView
@@ -26,7 +26,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/entername"
+        android:id="@+id/entername1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -39,21 +39,21 @@
     </EditText>
 
     <EditText
-        android:id="@+id/enterplace"
+        android:id="@+id/enterplace1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/entername"
+        android:layout_below="@+id/entername1"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/place" />
 
     <EditText
-        android:id="@+id/description"
+        android:id="@+id/description1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/enterplace"
+        android:layout_below="@+id/enterplace1"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:height="100dp"
@@ -61,12 +61,12 @@
         android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/send"
+        android:id="@+id/send1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/description"
-        android:layout_marginTop="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/description1"
+        android:layout_marginTop="35dp"
         android:text="@string/send" />
 
 </RelativeLayout>
