@@ -22,7 +22,7 @@ public class Start extends Activity {
 		
 		
 		/*
-		 * On choosing report Fault forward to the fault page
+		 * On choosing "report Fault" forward to the fault page
 		 */
 		fault.setOnClickListener(new OnClickListener() {
 			@Override

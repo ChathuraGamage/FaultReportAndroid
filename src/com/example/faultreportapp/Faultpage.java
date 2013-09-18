@@ -56,6 +56,9 @@ public class Faultpage extends Activity {
 		
 	}
 	
+	//send JSON function to be implemented here 
+	
+	
 	/*
 	 * This method makes sure that the user confirms go back.
 	 * Going back discards the data entered.

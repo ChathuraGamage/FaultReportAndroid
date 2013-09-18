@@ -33,7 +33,7 @@ public class Exitconfirm extends Activity {
 			}
 		});
 		
-		//On clicking no stays on in the app
+		//On clicking "NO" stays on in the app
 		no.setOnClickListener(new OnClickListener() {
 			
 			@Override
