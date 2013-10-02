@@ -30,7 +30,7 @@ public class Faultpage extends Activity {
 		
 		
 		/*
-		 * Store data in Json arrays when send is pressed.
+		 * Store data in JSON arrays when send is pressed.
 		 * Then send the data.
 		 */
 		send.setOnClickListener(new OnClickListener() {

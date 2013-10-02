@@ -22,18 +22,6 @@
         android:minWidth="700dp"
         android:text="@string/fault_button" />
 
-    <Button
-        android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Button01"
-        android:layout_alignRight="@+id/Button01"
-        android:layout_marginBottom="28dp"
-        android:maxWidth="700dp"
-        android:minWidth="700dp"
-        android:text="@string/Incident_button" />
-
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -61,8 +49,18 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="18dp"
         android:text="@string/app_start"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button01"
+        android:layout_alignLeft="@+id/Button01"
+        android:maxWidth="700dp"
+        android:minWidth="700dp"
+        android:text="@string/Incident_button" />
 
 </RelativeLayout>
