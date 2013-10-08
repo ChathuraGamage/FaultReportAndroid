@@ -29,7 +29,7 @@ public final class R {
     }
     public static final class id {
         public static final int Button01=0x7f080000;
-        public static final int action_settings=0x7f080012;
+        public static final int action_settings=0x7f080011;
         public static final int button1=0x7f080004;
         public static final int description1=0x7f08000f;
         public static final int description2=0x7f08000b;
@@ -37,7 +37,6 @@ public final class R {
         public static final int entername2=0x7f080009;
         public static final int enterplace1=0x7f08000e;
         public static final int enterplace2=0x7f08000a;
-        public static final int error=0x7f080011;
         public static final int imageView1=0x7f080001;
         public static final int instruction=0x7f080008;
         public static final int noB=0x7f080006;

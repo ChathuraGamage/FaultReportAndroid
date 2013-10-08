@@ -69,14 +69,6 @@
         android:layout_marginTop="35dp"
         android:text="@string/send" />
 
-    <TextView
-        android:id="@+id/error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/send1"
-        android:layout_marginTop="28dp"
-        android:text="TextView" />
+   
 
 </RelativeLayout>
