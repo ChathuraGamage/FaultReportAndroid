@@ -37,6 +37,8 @@ public class Incidentpage extends Activity {
 			@Override
 			public void onClick(View arg0) {
 
+				Toast.makeText(Incidentpage.this, "please wait.. Your Request is in process",
+						Toast.LENGTH_SHORT).show();
 				str.append("reporterid=");
 				str.append(name.getText());
 				str.append(";location=");
@@ -45,13 +47,12 @@ public class Incidentpage extends Activity {
 				str.append(description.getText());
 				str.append(";category=1");
 
-				Toast.makeText(Incidentpage.this, "please wait..",
-						Toast.LENGTH_SHORT).show();
+				
 				try {
 					boolean success = client.sendReport(str.toString());
 					if (success) {
 						messege("Success",
-								"Your report was successfully recorded.",
+								"Your report was successfully recorded. Thank you.",
 								"Exit", "Report another");
 					}
 					else
@@ -63,17 +64,14 @@ public class Incidentpage extends Activity {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-
 			}
 		});
-
 	}
 
 	/*
 	 * This method makes sure that the user confirms go back. Going back
 	 * discards the data entered.
 	 */
-
 	@Override
 	public void onBackPressed() {
 		new AlertDialog.Builder(this)

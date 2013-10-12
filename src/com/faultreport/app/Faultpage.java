@@ -34,10 +34,9 @@ public class Faultpage extends Activity {
 		send.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-
-				Toast.makeText(Faultpage.this, "please wait..",
+				Toast.makeText(Faultpage.this,
+						"please wait.. Your request is in process",
 						Toast.LENGTH_SHORT).show();
-
 				str.append("reporterid=");
 				str.append(name.getText());
 				str.append(";location=");
@@ -48,10 +47,9 @@ public class Faultpage extends Activity {
 
 				try {
 					boolean success = client.sendReport(str.toString());
-					// v.setText("" + success);
 					if (success) {
 						messege("Success",
-								"Your report was successfully recorded.",
+								"Your report was successfully recorded. Thank you..",
 								"Exit", "Report another");
 					} else {
 						messege("Failed",
@@ -59,12 +57,12 @@ public class Faultpage extends Activity {
 								"Exit", "Try again");
 					}
 				} catch (Exception e) {
-					e.printStackTrace();
+					messege("Failed",
+							e.getMessage(),
+							"Exit", "Try again");
 				}
-
 			}
 		});
-
 	}
 
 	/*
@@ -112,4 +110,5 @@ public class Faultpage extends Activity {
 					}
 				}).show();
 	}
+
 }
